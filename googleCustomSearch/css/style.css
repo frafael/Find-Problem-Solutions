@@ -1,0 +1,144 @@
+
+body#index {
+	background: url('../img/background-style.png') repeat-x scroll 0 0 #000000 !important;
+}
+
+body {
+	background-color: #f5f5f5;
+}
+
+input:focus, select:focus, textarea:focus {
+	border-color: #f89406 !important;
+	-webkit-box-shadow: none !important;
+     -moz-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+label {	
+	margin-right: 15px;
+	padding: 5px 0 0 0;
+	font-size: 13px;
+	line-height: 18px;
+	float: left;
+	text-align: right;
+}
+
+.navbar {
+	top: 0;
+	margin-bottom: 0;
+	color: #999999;
+	padding: 22px;
+	/* height: 86px; background-color: #FFF;*/
+	background-color: #FFF;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+	box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+	border-bottom: 1px solid #c8c8c9;
+}
+
+.navbar .navbar-content {
+	min-height: 40px;
+}
+
+.navbar .navbar-search { float: left;}
+
+.user-actions {
+	float: right;
+	padding: 11px;
+	/*margin: 50px 5px;*/
+}
+
+.user-actions a{
+	text-decoration: none;
+	color: #5d5d5f;
+	opacity: .9;
+	filter: alpha(opacity=90);
+	font-weight: bold;
+	margin-right: 18px;
+}
+
+.user-actions a:hover {
+	color: #f89406;
+}
+
+.filter {
+	height: 30px;
+	background-color: white;
+	border-bottom: 1px solid #c8c8c9;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+	box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+	z-index: 10;
+	padding: 7px 18px 8px 18px!important;
+}
+
+.filter-input {
+	float: left;
+	width: 290px;
+}
+
+.filter-box-center {
+	margin: 0 auto;
+	width: 675px;
+}
+
+.box-container {
+	position: absolute;
+	bottom: 25%;
+	width: 100%;
+}
+
+.box {
+	background-color: #fff;
+	border: 1px solid #dadada;
+	text-align: center;
+	bottom: 0;
+	width: 600px;
+	margin: 0 auto;
+	padding: 25px 30px;
+	color: #333;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+	height: 25%;
+	margin-top: 70px;
+	border-top: 1px solid #e5e5e5;
+	background-color: #f5f5f5;
+}
+
+.logo-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/*DEFAULT*/
+
+/* the width of the controls (keep same as gsc-results for flush look) */
+#searchcontrol { width:600px; }
+.gsc-control { width:600px; }
+/* the width of the search results box; no height value = nice auto look  */
+.gsc-results { width:600px; }
+/* the width of the search input */
+.gsc-input { width:20px; }
+/* hide "powered by google" (optional) */
+.gsc-branding { display:none; }
+/* custom colors */
+.gs-title a { color:orange; font-weight:bold; }
+#searchcontrol a { color:orange; }
+
