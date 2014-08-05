@@ -1,5 +1,6 @@
 <html>
   <head>
+  	<meta charset="UTF-8">
     <script src="https://www.google.com/jsapi?key=ABQIAAAAFEyVt-pBJaTXzM__EKlCrBTsyyvZhuBjP1YLRoRPwle1bnzSQRQBJp693I-9cLRWqwHDWCO_xmGezQ"
         type="text/javascript"></script>
     <script type="text/javascript">
@@ -66,28 +67,59 @@
       google.setOnLoadCallback(initialize);
     </script>
 	
-	<style type="text/css">
-		/* the width of the controls (keep same as gsc-results for flush look) */
-		#searchcontrol { width:600px; }
-		.gsc-control { width:600px; }
-		/* the width of the search results box; no height value = nice auto look  */
-		.gsc-results { width:600px; }
-		/* the width of the search input */
-		.gsc-input { width:20px; }
-		/* hide "powered by google" (optional) */
-		.gsc-branding { display:none; }
-		.gs-title a { color:orange; font-weight:bold; }
-		#searchcontrol a { color:orange; }
-	</style>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 	
-	<title>Find Problem Solutions</title>
+	<title>Busca em fóruns</title>
   </head>
   <body>
-	<h1>Find Problem Solutions</h1>
-	<p>Write your problem!</p>
-    <div id="searchcontrol"></div>
-	<p><a href="http://jquery4u.com/tutorials/google-search-api-ajax/">Back to Tutorial</a></p>
-	<button onclick="restart();">teste</button>
+	<nav class="navbar">
+		<div class="navbar-content">
+			<div id="searchcontrol"></div>
+			<div class="input-append navbar-search">
+			  <input placeholder="O que deseja pesquisar?" class="span5" id="appendedInputButton" type="text">
+			  <button class="btn btn-warning" type="button"><i class="icon-search icon-white"></i></button>
+			</div>
+			<div class="user-actions">
+				<a href="">Login</a>
+				<a href="">Cadastre-se</a>
+			</div>
+		<div>
+    </nav>
+	<div class="filter">
+		<div class="filter-box-center">
+			<div class="filter-input">
+				<div class="clearfix">
+					<label>Fórum: </label>
+					<div class="input">
+						<select id="forum">
+							<option>Escolha um fórum...</option>
+							<option value="guj">GUJ</option>
+							<option value="stackoverflow">StackOrverflow</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="filter-input">
+				<div class="clearfix">
+					<label>Tipo: </label>
+					<div class="input">
+						<select id="tipo">
+							<option value="erro">Erro</option>
+							<option value="tutorial">Tutorial</option>
+							<option value="doc">Documentação</option>
+							<option value="demo">Exemplos (Demos)</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<button class="btn btn-warning" type="button" style="float: left;">Pesquisar</button>
+		</div>
+	</div>
+	
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
 
